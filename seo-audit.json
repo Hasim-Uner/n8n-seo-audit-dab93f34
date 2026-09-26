@@ -40,7 +40,7 @@
             },
             {
               "name": "key",
-              "value": "AIzaSyCOM5u0DP7MBCvmL7ckNy5iA8U2Xy6JNUg"
+              "value": "={{ $env.PAGESPEED_API_KEY }}"
             }
           ]
         },
@@ -73,13 +73,7 @@
       ],
       "id": "c668f53f-d22e-45eb-8a13-d64d00f54d05",
       "name": "Send a message",
-      "webhookId": "6a7bf906-6e8c-4ca0-b922-ea7828b2abfe",
-      "credentials": {
-        "gmailOAuth2": {
-          "id": "jceQt5hqhfjV9PFp",
-          "name": "Gmail account"
-        }
-      }
+      "webhookId": "6a7bf906-6e8c-4ca0-b922-ea7828b2abfe"
     },
     {
       "parameters": {
@@ -130,13 +124,7 @@
         -80
       ],
       "id": "08624da5-dd7f-45cd-a29f-bc1c2dc29edb",
-      "name": "PDFco Api",
-      "credentials": {
-        "pdfcoApi": {
-          "id": "ePojo48aGwIKUFbM",
-          "name": "PDF.co account"
-        }
-      }
+      "name": "PDFco Api"
     },
     {
       "parameters": {
@@ -180,13 +168,7 @@
         -288
       ],
       "id": "364dc24a-c608-44d4-9e62-984c29fd95dc",
-      "name": "Agent 1: Tech-Analyst",
-      "credentials": {
-        "openAiApi": {
-          "id": "pvAPFvvDSZ05pREb",
-          "name": "OpenAi account"
-        }
-      }
+      "name": "Agent 1: Tech-Analyst"
     },
     {
       "parameters": {
@@ -218,13 +200,7 @@
       ],
       "id": "911e44c4-ffc7-4971-8f5f-7c590a5b831c",
       "name": "Agent 3: Strategie-Berater",
-      "retryOnFail": false,
-      "credentials": {
-        "openAiApi": {
-          "id": "pvAPFvvDSZ05pREb",
-          "name": "OpenAi account"
-        }
-      }
+      "retryOnFail": false
     },
     {
       "parameters": {
@@ -255,13 +231,7 @@
         -288
       ],
       "id": "a16a5243-09d8-49d2-b768-9807b500edd8",
-      "name": "Agent 2: Content-Psychologe",
-      "credentials": {
-        "openAiApi": {
-          "id": "pvAPFvvDSZ05pREb",
-          "name": "OpenAi account"
-        }
-      }
+      "name": "Agent 2: Content-Psychologe"
     },
     {
       "parameters": {
@@ -277,75 +247,6 @@
       "name": "Google Filter"
     }
   ],
-  "pinData": {
-    "Webhook": [
-      {
-        "json": {
-          "headers": {
-            "host": "hasim.app.n8n.cloud",
-            "user-agent": "WordPress/6.8.3; https://hasimuener.de",
-            "content-length": "704",
-            "accept": "*/*",
-            "accept-encoding": "gzip, br",
-            "cdn-loop": "cloudflare; loops=1; subreqs=1",
-            "cf-connecting-ip": "2a00:1c98:60:1::21d",
-            "cf-ew-via": "15",
-            "cf-ipcountry": "BE",
-            "cf-ray": "9bd1c7c27152cbb9-AMS",
-            "cf-visitor": "{\"scheme\":\"https\"}",
-            "cf-worker": "n8n.cloud",
-            "content-type": "application/json",
-            "x-forwarded-for": "2a00:1c98:60:1::21d, 104.23.172.9",
-            "x-forwarded-host": "hasim.app.n8n.cloud",
-            "x-forwarded-port": "443",
-            "x-forwarded-proto": "https",
-            "x-forwarded-server": "traefik-prod-users-gwc-109-7d5ddcd948-qgtf9",
-            "x-is-trusted": "yes",
-            "x-real-ip": "2a00:1c98:60:1::21d"
-          },
-          "params": {},
-          "query": {},
-          "body": {
-            "url": "https://hasimuener.de/",
-            "email": "hallo@hasimuener.de",
-            "gdpr-agreement_1": "on",
-            "__submission": {
-              "id": "93",
-              "form_id": "29",
-              "serial_number": "20",
-              "source_url": "https://hasimuener.de/?fluent_forms_pages=1&design_mode=1&preview_id=29",
-              "user_id": "1",
-              "status": "unread",
-              "is_favourite": "0",
-              "browser": "Firefox",
-              "device": "Apple",
-              "ip": "2a02:560:544c:bd00:1db3:1d45:c744:8912",
-              "city": null,
-              "country": null,
-              "payment_status": null,
-              "payment_method": null,
-              "payment_type": null,
-              "currency": null,
-              "payment_total": null,
-              "total_paid": null,
-              "created_at": "2026-01-13 02:53:17",
-              "updated_at": "2026-01-13 02:53:17",
-              "user_inputs": {
-                "url": "https://hasimuener.de/",
-                "email": "hallo@hasimuener.de",
-                "gdpr-agreement_1": "Akzeptiert"
-              }
-            }
-          },
-          "webhookUrl": "https://hasim.app.n8n.cloud/webhook/audit",
-          "executionMode": "production"
-        },
-        "pairedItem": {
-          "item": 0
-        }
-      }
-    ]
-  },
   "connections": {
     "Webhook": {
       "main": [
